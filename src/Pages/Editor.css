@@ -1,0 +1,92 @@
+.mainWrap{
+    width: 100%;
+    display: flex;
+    position: fixed;
+}
+
+.aside{
+    width: 8%;
+    min-height: 100vh;
+    float: left;
+    background-color: rgb(48, 47, 47);
+}
+
+.asideInner > h3 {
+    color: white;
+}
+.logo{
+    border-bottom: 1px solid #424242;
+    padding-bottom: 10px;
+}
+.logo > img {
+    height: 80px;
+    width: 110px;
+}
+.clientsList{
+    display: flex;
+    align-items: center;
+    margin: 2px;
+    flex-wrap: wrap;
+    gap: 20px;
+   max-height: 53vh;
+   overflow-y: scroll;
+}
+.clientsList::-webkit-scrollbar:horizontal{
+    height: 5px; 
+  }
+  .Btn{
+    border: none;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    width: 7%;    
+}
+.copyBtn{
+    background-color: white;
+    color: rgb(0, 116, 71);
+    position: fixed;
+    bottom: 57px;
+}
+.leaveBtn{
+    position: fixed;
+    bottom: 5px;
+    background-color:rgb(0, 245, 151) ;
+}
+.copyBtn:hover,
+.leaveBtn:hover{
+    background-color: crimson;
+    color: white;
+}
+.editorWrap{
+    width: 92%;
+    overflow: hidden;
+    float: right;
+    font-size: 20px;
+}
+
+
+
+
+@media screen and (max-width : 600px ) {
+    
+    .aside{
+        width: 25vmin;
+    }
+    .asideInner > h3 {
+        font-size: medium;
+        overflow-wrap: break-word;
+    }
+    .logo > img {
+        height: 70px;
+        width: 85px;
+    }
+    .Btn{
+        font-size: 12px;
+        font-weight: 600;
+        width: 20vmin;    
+    }
+}

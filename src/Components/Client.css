@@ -1,0 +1,7 @@
+.client{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-weight: bold;
+    color: rgb(250, 247, 247);
+}

@@ -3,4 +3,9 @@
     font-size: 20px;
     line-height: 1.6;
     padding-top: 20px;
+    background-color: black;
+}
+
+.CodeMirror-selected {
+    background-color: rgba(156, 53, 53, 0.7) !important ;
 }
